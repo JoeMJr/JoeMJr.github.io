@@ -1,0 +1,11 @@
+.my_header {
+    background-color: #1c1c1c;
+    color: #4b914b;
+    padding: 20px;
+    text-align: center;
+}
+
+body {
+    background-color: #303030;
+    color: white;
+}
