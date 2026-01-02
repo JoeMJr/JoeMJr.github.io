@@ -1,11 +1,24 @@
-.my_header {
-    background-color: #1c1c1c;
-    color: #4b914b;
-    padding: 20px;
+
+body {
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
     text-align: center;
 }
 
-body {
-    background-color: #303030;
+input{
+    background-color: #3c3c3c;
     color: white;
+}
+
+/* I know this is broken might fix this later */
+.mid-sec{
+    border: 10px solid #bbbbbb;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    overflow: hidden;
 }
