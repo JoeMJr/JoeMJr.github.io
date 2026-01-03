@@ -1,11 +1,18 @@
-//var input = document.getElementById('input');
-// why is this stupid, it no worke
-$("input").on("keydown",function search(e) {
-    if(e.keyCode == 13) {
-        alert($(this).val());
+// I was stupid and got this to work
+function terminal(ele) {
+    if(event.key === 'Enter') {
+        alert(ele.value);
+        termInterpret(ele.value);
     }
-});
-console.log("I Exist?")
+}
 
-
-
+function termInterpret(value){
+    switch(value){
+        case "help": 
+            alert("RETURN HELP");
+            break;
+        default:
+            alert(value + " is not a ");
+            break;
+    }
+}
