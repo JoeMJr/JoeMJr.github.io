@@ -10,7 +10,7 @@ function termInterpret(value){
     /* // Commands I need to add
     * help - Done - will update if I have any new commands
     * echo - Done
-    * ls
+    * ls - added but need more files
     * cd
     * pwd
     * cat
@@ -79,7 +79,6 @@ function manInterpret(cmds){
             break;
     }
 }
-<<<<<<< HEAD
 
 // I could make a table to do this easier but I might just hard code this with nested switch statements
 function getFiles(file_loc){
@@ -97,6 +96,4 @@ function getFiles(file_loc){
             break;
     }
 }
-=======
 // I would like to thank  Jakub T. Jankiewicz since I was looking at his to understand how I could make mine
->>>>>>> 14b6eef61d1ad53235afe5f1dd1b9be6e6dc37e3
