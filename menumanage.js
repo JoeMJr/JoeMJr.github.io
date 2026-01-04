@@ -21,12 +21,18 @@ function termInterpret(value){
     trimmed = value.trimStart(); // Remove any leading spaces
     cmd = trimmed.split(" "); // I split the value to get the first array position as my actual command
     //console.log("0:" + cmd[0] + ", len:" + cmd[0].length);
+
+    file_loc = "/root"
+
     switch(cmd[0]){
         case "help": 
             alert("help echo ls cd pwd cat clear man"); // Might add more
             break;
         case "echo": 
             alert(trimmed.substr(5)); // fuck it, it works so i don't have to do any fancy wizardry
+            break;
+        case "ls": 
+            getFiles(file_loc);
             break;
         case "clear": 
             location.reload(); // This may be stupid but I don't care
@@ -73,3 +79,19 @@ function manInterpret(cmds){
     }
 }
 
+// I could make a table to do this easier but I might just hard code this with nested switch statements
+function getFiles(file_loc){
+    root_dir = ["/projects","blog.exe","credits.txt"] // I changed my mind
+    projects_dir = ["Cpp_Interpreter", "SmartEatzPartially", ""];
+    switch(file_loc){
+        case "/root":
+            alert(root_dir);
+            break;
+        case "/projects":
+            alert(root_dir);
+            break;
+        default:
+            alert("There was a problem");
+            break;
+    }
+}
