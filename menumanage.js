@@ -16,6 +16,7 @@ function termInterpret(value){
     * cat
     * clear - Done
     * man - Done for now
+    * // I should add a credit/insporation command to show what has helped me make this terminal come to life
     * // I also Need to fix the terminal to show the results as ul items instead of alerts
     */
     trimmed = value.trimStart(); // Remove any leading spaces
@@ -72,4 +73,4 @@ function manInterpret(cmds){
             break;
     }
 }
-
+// I would like to thank  Jakub T. Jankiewicz since I was looking at his to understand how I could make mine
